@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Nonogram</title>
+  </head>
+
+  <style>
+      h1{
+        font-size:40px;
+        color: blue;
+        text-align: center;
+      }
+
+      input{
+        display: block;
+        margin-top:5px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border-width:medium;
+        border-color:green;
+        font-size:30px;
+        width:200px;
+        height:30px;
+      }
+
+      button{
+        background-color: red;
+        border-color:black ;
+        display: block;
+        margin-top:10px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size:30px;
+        border-radius:5px;
+      }
+      canvas{
+        margin-top:5px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+  </style>
+
+  <body bgcolor="grey">
+      <h1>Nonogram by Davide Fassio for Trano</h1>
+      <input type="text" id="texth" name="dim" value="10">
+      <button type="button" onclick="butt()">Start!</button>
+
+      <script src="main.js"></script>
+      <script src="p5.min.js"></script>
+
+  </body>
+</html>
