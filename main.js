@@ -7,7 +7,16 @@ function setup(){
 }
 
 function draw(){
+  if(mouseIsPressed && mouseButton === RIGHT){
+    if(mouseX >= 150 && mouseX < 600 && mouseY >= 150 && mouseY < 600){
+      let i = floor((mouseX-150)*numb/450)*450/numb + 450/(numb*2) + 150;
+      let j = floor((mouseY-150)*numb/450)*450/numb + 450/(numb*2) + 150;
+      stroke(255, 0, 0);
+      fill(255, 0, 0);
+      ellipse(i, j, 450/(numb*4));
 
+    }
+  }
 }
 
 function mouseClicked(){
